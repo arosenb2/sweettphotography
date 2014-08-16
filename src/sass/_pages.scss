@@ -19,6 +19,17 @@
   img {
     width:100%;
   }
+
+  #logo {
+    position:fixed;
+    top:10px;
+    left:20px;
+    width:475px;
+    height:70px;
+    background:#bbb;
+    opacity:.5;
+    z-index:100;
+  }
 }
 
 /* Etsy Page */

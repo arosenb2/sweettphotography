@@ -347,6 +347,16 @@ header li a {
 #featured img {
   width: 100%;
 }
+#featured #logo {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  width: 475px;
+  height: 70px;
+  background: #bbb;
+  opacity: .5;
+  z-index: 100;
+}
 
 /* Etsy Page */
 #etsy {
@@ -399,15 +409,6 @@ header ul li a {
 }
 header ul li a:hover {
   border-bottom: 3px solid #ff7171;
-}
-header #logo {
-  position: fixed;
-  top: 10px;
-  left: 20px;
-  width: 475px;
-  height: 70px;
-  background: #bbb;
-  opacity: .5;
 }
 header nav {
   float: right;
