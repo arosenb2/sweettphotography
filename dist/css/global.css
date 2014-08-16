@@ -246,6 +246,11 @@ table {
   margin: 0 auto;
   padding: 40px 0;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100% !important;
+  }
+}
 
 h2 {
   padding: 0.83em 0;
