@@ -1,0 +1,25 @@
+.page{
+  position: relative;
+  height:640px;
+  min-height:640px;
+  width:100%;
+  background:#eee;
+  min-height:100%;
+  z-index:200;
+
+  &#featured{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:50px;
+    z-index:10 !important;
+  }
+}
+
+#content {
+  z-index:100;
+  display:block;
+  margin:55% 0 0 0;
+  width:100%;
+}

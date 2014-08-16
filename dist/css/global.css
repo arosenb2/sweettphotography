@@ -1,0 +1,457 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+html {
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Gill Sans";
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hidden {
+  display: none;
+  visibility: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+h2 {
+  padding: 0.83em 0;
+  margin: 0;
+}
+
+.half-page {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Gill Sans";
+  font-weight: 400;
+}
+
+a {
+  color: #ff7171;
+}
+
+header li a {
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+.body-link {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
+  text-decoration: none;
+  padding: 7px 10px;
+  border: 2px solid #ff7171;
+  border-radius: 8px;
+  font-size: 22px;
+}
+.body-link:hover {
+  color: #eeeeee;
+  text-decoration: none;
+  background: #ff7171;
+  border: 2px solid #ff5858;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.icon.xlarge {
+  width: 400px;
+}
+.icon.large {
+  width: 200px;
+}
+.icon.medium {
+  width: 100px;
+}
+.icon.small {
+  width: 50px;
+}
+.icon.xsmall {
+  width: 25px;
+}
+
+#etsy-link {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
+}
+#etsy-link:hover {
+  fill: #b95727;
+}
+
+.slideshow-arrow svg {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
+}
+.slideshow-arrow svg:hover {
+  fill: #eeeeee;
+}
+
+/* Featured Page */
+#featured {
+  background-color: #eee;
+  /* background-image:url(../images/farm.jpg); */
+  background-size: cover;
+}
+#featured .slideshow-arrow {
+  position: absolute;
+  top: 40%;
+  height: 88px;
+  width: 88px;
+  left: 50px;
+  z-index: 100;
+}
+#featured .slideshow-arrow:last-child {
+  left: auto !important;
+  right: 50px;
+}
+#featured img {
+  width: 100%;
+}
+
+/* Etsy Page */
+#etsy {
+  padding-top: 50px;
+  background: #ecbda6;
+}
+#etsy img {
+  padding: 5px;
+  border: 3px solid #ff7171;
+  width: 100%;
+}
+
+/* Contact Page */
+#contact {
+  z-index: 1000;
+  background: #222222;
+}
+#contact h2 {
+  color: #eeeeee;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50px;
+  z-index: 500;
+  min-width: 320px;
+  width: 100%;
+  max-width: 700px;
+  border-bottom: 3px solid black;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+header ul li {
+  float: left;
+  padding: 5px 15px;
+}
+header ul li a {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
+  padding: 0 5px 9px;
+  text-decoration: none;
+  color: #ff7171;
+  border-bottom: 3px solid transparent;
+}
+header ul li a:hover {
+  border-bottom: 3px solid #ff7171;
+}
+header #logo {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  width: 475px;
+  height: 70px;
+  background: #bbb;
+  opacity: .5;
+}
+header nav {
+  float: right;
+  padding: 15px 15px 0;
+}
+
+.page {
+  position: relative;
+  height: 640px;
+  min-height: 640px;
+  width: 100%;
+  background: #eee;
+  min-height: 100%;
+  z-index: 200;
+}
+.page#featured {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  z-index: 10 !important;
+}
+
+#content {
+  z-index: 100;
+  display: block;
+  margin: 55% 0 0 0;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.8), #eeeeee, #eeeeee);
+  background: linear-gradient(top, rgba(239, 239, 239, 0.8), #eeeeee, #eeeeee);
+  z-index: 2000;
+  /* color:$contactText; */
+}
+footer small {
+  display: block;
+  text-align: center;
+  padding: 15px 0 0;
+}

@@ -1,0 +1,15 @@
+footer{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:60px;
+  background:linear-gradient(top,$footerBackground,$footerBackgroundEnd,$footerBackgroundEnd);
+  z-index:2000;
+  /* color:$contactText; */
+  small{
+    display:block;
+    text-align:center;
+    padding:15px 0 0;
+  }
+}

@@ -1,0 +1,13 @@
+@mixin reset-size() {
+  margin:0;
+  padding:0;
+}
+
+@mixin base-font() {
+  font-family:"Gill Sans";
+  font-weight:400;
+}
+
+@mixin transition() {
+  transition:0.3s all ease-in-out;
+}

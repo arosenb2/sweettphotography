@@ -1,0 +1,31 @@
+.icon{
+  &.xlarge{
+    width:400px
+  }
+  &.large{
+    width:200px
+  }
+  &.medium{
+    width:100px
+  }
+  &.small{
+    width:50px
+  }
+  &.xsmall{
+    width:25px
+  }
+}
+
+#etsy-link {
+  @include transition;
+  &:hover{
+    fill:$etsyHover;
+  }
+}
+
+.slideshow-arrow svg{
+  @include transition;
+  &:hover{
+    fill:$arrowColor;
+  }
+}

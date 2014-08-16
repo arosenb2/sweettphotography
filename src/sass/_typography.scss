@@ -1,0 +1,33 @@
+body{
+  @include base-font;
+}
+
+a{
+  color:$linkColor;
+}
+
+header{
+  li a{
+    text-transform: uppercase;
+    font-size:19px;
+  }
+}
+
+.body-link{
+  @include transition;
+  text-decoration: none;
+  padding:7px 10px;
+  border:2px solid $linkColor;
+  border-radius:8px;
+  font-size:22px;
+  &:hover{
+    color:$arrowColor;
+    text-decoration: none;
+    background:$linkColor;
+    border:2px solid darken($linkColor,5%);
+  }
+}
+
+.text-center{
+  text-align:center;
+}
