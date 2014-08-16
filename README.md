@@ -1,4 +1,7 @@
-sweettphotography
+Sweet T Photography Redesign
 =================
 
-Theme for Sweet-TPhotography.com
+Original Site: [Sweet-TPhotography.com]
+Current Progress: [arosenb2.github.io/sweettphotography]
+
+Technologies: Gulp, Sass, LiveReload and SVG
