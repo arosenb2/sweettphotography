@@ -3,7 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <title>Sweet T Photography | It's A Way of Life</title>
-  <link rel="stylesheet" href="dist/css/global.css" />
+  <style>
+<!-- Critical CSS -->
+html { color: black; background: white; }
+html, button, input, select, textarea { font-family: 'Gill Sans'; }
+.hidden { display: none; }
+svg:not(:root) { overflow: hidden; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+header { position: fixed; top: 0px; right: 0px; height: 50px; z-index: 500; min-width: 320px; width: 100%; max-width: 700px; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black; }
+header nav { float: right; padding: 15px 15px 0px; }
+header ul { list-style: none; margin: 0px; padding: 0px; float: right; }
+header ul li { float: left; padding: 5px 15px; }
+a { background: transparent; color: rgb(255, 113, 113); }
+header li a { text-transform: uppercase; font-size: 19px; }
+header ul li a { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; padding: 0px 5px 9px; text-decoration: none; color: rgb(255, 113, 113); border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: transparent; }
+.page { position: relative; height: 640px; width: 100%; min-height: 100%; z-index: 200; background: rgb(238, 238, 238); }
+#featured { background-color: rgb(238, 238, 238); background-size: cover; }
+.page#featured { position: fixed; top: 0px; left: 0px; right: 0px; bottom: 50px; z-index: 10 !important; }
+img { border: 0px; }
+#featured img { width: 100%; }
+#featured #logo { position: fixed; top: 10px; left: 20px; width: 475px; height: 70px; opacity: 0.5; z-index: 100; background: rgb(187, 187, 187); }
+#featured .slideshow-arrow { position: absolute; top: 40%; height: 88px; width: 88px; left: 50px; z-index: 100; }
+.slideshow-arrow svg { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; }
+#featured .slideshow-arrow:last-child { right: 50px; left: auto !important; }
+footer { position: fixed; left: 0px; right: 0px; bottom: 0px; height: 60px; z-index: 2000; background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.8), rgb(238, 238, 238), rgb(238, 238, 238)); }
+small { font-size: 80%; }
+footer small { display: block; text-align: center; padding: 15px 0px 0px; }
+  </style>
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" class="hidden">
@@ -92,7 +118,7 @@
   <footer>
     <small>&copy;&nbsp;<script>document.write(new Date().getFullYear())</script>&nbsp;Sweet T Photography</small>
   </footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/20140415/jquery.cycle2.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function(){
@@ -138,3 +164,4 @@
   </script>
 </body>
 </html>
+<link rel="stylesheet" href="dist/css/global.min.css" />
