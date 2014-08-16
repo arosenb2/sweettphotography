@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
+    imagemin = require('gulp-imagemin'),
     plumber = require('gulp-plumber'),
     svgSprite = require("gulp-svg-sprites"),
     rename = require('gulp-rename'),
@@ -44,8 +45,10 @@ function notifyLiveReload(event) {
 gulp.task('default',['express','livereload'],function () {
   gulp.watch('src/sass/*.scss', ['css']);
   gulp.watch('src/svg/*.svg', ['svg']);
+  gulp.watch('src/images/*', ['image']);
   gulp.watch('*.html', notifyLiveReload);
   gulp.watch('dist/css/*.css', notifyLiveReload);
+  gulp.watch('dist/images/*', notifyLiveReload);
 });
 
 gulp.task('express',function(){
@@ -73,8 +76,8 @@ gulp.task('svg', function () {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('src/sass/*.scss', ['css']);
-  gulp.watch('*.html', notifyLiveReload);
-  gulp.watch('src/css/*.css', notifyLiveReload);
+gulp.task('image', function() {
+  return gulp.src('src/images/*')
+    .pipe(imagemin({progressive: true}))
+    .pipe(gulp.dest('dist/images'));
 });
