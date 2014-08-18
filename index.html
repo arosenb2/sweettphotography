@@ -95,17 +95,7 @@ footer small { display: block; text-align: center; padding: 15px 0px 0px; }
         </div>
       </div>
       <div class="portfolio-container">
-        <ul>
-          <li><a href="#" class="portfolio-link"><img src="//placekitten.com/250/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/251/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/252/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/253/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/254/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/255/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/256/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/257/450" alt="" /></a></li><!--
-          --><li><a href="#" class="portfolio-link"><img src="//placekitten.com/258/450" alt="" /></a></li>
-        </ul>
+        <ul></ul>
       </div>
       <div class="container">
 
@@ -150,6 +140,7 @@ footer small { display: block; text-align: center; padding: 15px 0px 0px; }
   <script type="text/javascript">
   $(document).ready(function(){
     loadFeatured();
+    loadPortfolio();
     loadEtsy();
   });
 
@@ -166,6 +157,12 @@ footer small { display: block; text-align: center; padding: 15px 0px 0px; }
     $(".slideshow-arrow").on("click",function(e){
       e.preventDefault();
     });
+  }
+
+  function loadPortfolio(){
+    for(var i=0;i<10;i++){
+        $(".portfolio-container ul").append("<li><a href=\"#\" class=\"portfolio-link\"><img src=\"//placekitten.com/250/"+(450+i)+"\" alt=\"\" /></a></li>");
+    }
   }
 
   function loadEtsy(){
