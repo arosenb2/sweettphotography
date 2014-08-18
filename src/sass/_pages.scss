@@ -52,14 +52,22 @@
       @include reset-size;
       white-space:nowrap;
       list-style:none;
+      max-height:435px;
       li{
         @include reset-size;
         display:inline-block;
         width:250px;
         height:100%;
         a{
+          @include transition;
           img{
+            @include transition;
             width:100%;
+            filter: grayscale(100%);
+            vertical-align:top;
+            &:hover{
+              filter: grayscale(0);
+            }
           }
         }
       }

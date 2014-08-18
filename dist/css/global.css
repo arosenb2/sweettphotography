@@ -390,6 +390,7 @@ header li a {
   padding: 0;
   white-space: nowrap;
   list-style: none;
+  max-height: 435px;
 }
 #portfolio .portfolio-container ul li {
   margin: 0;
@@ -398,8 +399,21 @@ header li a {
   width: 250px;
   height: 100%;
 }
+#portfolio .portfolio-container ul li a {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
+}
 #portfolio .portfolio-container ul li a img {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
   width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  vertical-align: top;
+}
+#portfolio .portfolio-container ul li a img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 /* Etsy Page */
