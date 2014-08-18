@@ -3,7 +3,9 @@
   visibility:none;
 }
 .container{
+  position:relative;
   width:960px;
+  height:100%;
   @media screen and (max-width: 768px) {
     width:100% !important;
   }

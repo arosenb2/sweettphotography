@@ -18,8 +18,10 @@
 }
 
 #content {
+  position:absolute;
   z-index:100;
   display:block;
   margin:55% 0 0 0;
   width:100%;
+  overflow:hidden;
 }

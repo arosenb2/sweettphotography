@@ -32,6 +32,41 @@
   }
 }
 
+/* Portfolio Page */
+#portfolio{
+  background-color:#dc143c;
+  .portfolio-header-container{
+    width:960px;
+    margin:0 auto;
+    padding: 45px 0 0;
+    @media screen and (max-width: 768px) {
+      width:100% !important;
+    }
+  }
+  .portfolio-container{
+    position:relative;
+    top:30px;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    ul{
+      @include reset-size;
+      white-space:nowrap;
+      list-style:none;
+      li{
+        @include reset-size;
+        display:inline-block;
+        width:250px;
+        height:100%;
+        a{
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Etsy Page */
 #etsy{
   padding-top:50px;

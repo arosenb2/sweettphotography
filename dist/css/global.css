@@ -242,7 +242,9 @@ table {
 }
 
 .container {
+  position: relative;
   width: 960px;
+  height: 100%;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -363,6 +365,43 @@ header li a {
   z-index: 100;
 }
 
+/* Portfolio Page */
+#portfolio {
+  background-color: #dc143c;
+}
+#portfolio .portfolio-header-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 45px 0 0;
+}
+@media screen and (max-width: 768px) {
+  #portfolio .portfolio-header-container {
+    width: 100% !important;
+  }
+}
+#portfolio .portfolio-container {
+  position: relative;
+  top: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+#portfolio .portfolio-container ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  list-style: none;
+}
+#portfolio .portfolio-container ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 250px;
+  height: 100%;
+}
+#portfolio .portfolio-container ul li a img {
+  width: 100%;
+}
+
 /* Etsy Page */
 #etsy {
   padding-top: 50px;
@@ -439,10 +478,12 @@ header nav {
 }
 
 #content {
+  position: absolute;
   z-index: 100;
   display: block;
   margin: 55% 0 0 0;
   width: 100%;
+  overflow: hidden;
 }
 
 footer {
