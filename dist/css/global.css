@@ -336,11 +336,10 @@ header li a {
 /* Featured Page */
 #featured {
   background-color: #eee;
-  /* background-image:url(../images/farm.jpg); */
   background-size: cover;
 }
 #featured .slideshow-arrow {
-  position: absolute;
+  position: fixed;
   top: 40%;
   height: 88px;
   width: 88px;

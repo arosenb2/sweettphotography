@@ -6,16 +6,17 @@
   <title>Sweet T Photography | It's A Way of Life</title>
   <style>
 <!-- Critical CSS -->
-html { color: black; background: white; }
-html, button, input, select, textarea { font-family: 'Gill Sans'; }
+html { color: rgb(0, 0, 0); background: rgb(255, 255, 255); }
+button, html, input, select, textarea { font-family: 'Gill Sans'; }
+body { margin: 0px; font-family: 'Gill Sans'; font-weight: 400; }
 .hidden { display: none; }
 svg:not(:root) { overflow: hidden; }
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
-header { position: fixed; top: 0px; right: 0px; height: 50px; z-index: 500; min-width: 320px; width: 100%; max-width: 700px; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black; }
+header { position: fixed; top: 0px; right: 0px; height: 50px; z-index: 500; min-width: 320px; width: 100%; max-width: 700px; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: rgb(0, 0, 0); }
 header nav { float: right; padding: 15px 15px 0px; }
 header ul { list-style: none; margin: 0px; padding: 0px; float: right; }
 header ul li { float: left; padding: 5px 15px; }
-a { background: transparent; color: rgb(255, 113, 113); }
+a { background: 0px 0px; color: rgb(255, 113, 113); }
 header li a { text-transform: uppercase; font-size: 19px; }
 header ul li a { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; padding: 0px 5px 9px; text-decoration: none; color: rgb(255, 113, 113); border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: transparent; }
 .page { position: relative; height: 640px; width: 100%; min-height: 100%; z-index: 200; background: rgb(238, 238, 238); }
@@ -24,9 +25,21 @@ header ul li a { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s 
 img { border: 0px; }
 #featured img { width: 100%; }
 #featured #logo { position: fixed; top: 10px; left: 20px; width: 475px; height: 70px; opacity: 0.5; z-index: 100; background: rgb(187, 187, 187); }
-#featured .slideshow-arrow { position: absolute; top: 40%; height: 88px; width: 88px; left: 50px; z-index: 100; }
+.container { position: relative; width: 960px; height: 100%; margin: 0px auto; padding: 40px 0px; }
+#featured .slideshow-arrow { position: fixed; top: 40%; height: 88px; width: 88px; left: 50px; z-index: 100; }
 .slideshow-arrow svg { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; }
 #featured .slideshow-arrow:last-child { right: 50px; left: auto !important; }
+#content { position: absolute; z-index: 100; display: block; margin: 55% 0px 0px; width: 100%; overflow: hidden; }
+h2 { font-size: 1.5em; padding: 0.83em 0px; margin: 0px; }
+/*
+#portfolio { background-color: rgb(220, 20, 60); }
+#portfolio .portfolio-header-container { width: 960px; margin: 0px auto; padding: 45px 0px 0px; }
+#portfolio .portfolio-container { position: relative; top: 30px; overflow-x: scroll; overflow-y: hidden; }
+#portfolio .portfolio-container ul { margin: 0px; padding: 0px; white-space: nowrap; list-style: none; max-height: 435px; }
+#portfolio .portfolio-container ul li { margin: 0px; padding: 0px; display: inline-block; width: 250px; height: 100%; }
+#portfolio .portfolio-container ul li a { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; }
+#portfolio .portfolio-container ul li a img { transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; width: 100%; -webkit-filter: grayscale(100%); vertical-align: top; }
+*/
 footer { position: fixed; left: 0px; right: 0px; bottom: 0px; height: 60px; z-index: 2000; background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.8), rgb(238, 238, 238), rgb(238, 238, 238)); }
 small { font-size: 80%; }
 footer small { display: block; text-align: center; padding: 15px 0px 0px; }
