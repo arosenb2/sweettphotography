@@ -1,3 +1,9 @@
+/*
+    Media Queries
+*/
+/*
+    Theming
+*/
 article,
 aside,
 details,
@@ -248,7 +254,7 @@ table {
   margin: 0 auto;
   padding: 40px 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .container {
     width: 100% !important;
   }
@@ -287,7 +293,6 @@ header li a {
   text-decoration: none;
   padding: 7px 10px;
   border: 2px solid #ff7171;
-  border-radius: 8px;
   font-size: 22px;
 }
 .body-link:hover {
@@ -429,7 +434,8 @@ header li a {
 /* Contact Page */
 #contact {
   z-index: 1000;
-  background: #222222;
+  background: -webkit-radial-gradient(circle, #aaaaaa, #222222);
+  background: radial-gradient(circle, #aaaaaa, #222222);
 }
 #contact h2 {
   color: #eeeeee;
@@ -462,6 +468,7 @@ header ul li a {
   padding: 0 5px 9px;
   text-decoration: none;
   color: #ff7171;
+  text-shadow: 0 1px 1px #a40000;
   border-bottom: 3px solid transparent;
 }
 header ul li a:hover {
@@ -474,11 +481,8 @@ header nav {
 
 .page {
   position: relative;
-  height: 640px;
-  min-height: 640px;
   width: 100%;
   background: #eee;
-  min-height: 100%;
   z-index: 200;
 }
 .page#featured {
@@ -494,7 +498,6 @@ header nav {
   position: absolute;
   z-index: 100;
   display: block;
-  margin: 55% 0 0 0;
   width: 100%;
   overflow: hidden;
 }

@@ -1,3 +1,16 @@
+/*
+    Media Queries
+*/
+
+$desktop:"screen and (min-width:1025px)";
+$mobile:"screen and (max-width:1024px)";
+$tablet:"screen and (min-width:768px and max-width:1024px)";
+$phone:"screen and (max-width:767px)";
+
+/*
+    Theming
+*/
+
 $borderColor:#000;
 $linkColor:#ff7171;
 $linkHoverColor:#ff7171;
@@ -8,7 +21,7 @@ $etsyBackground:lighten($etsyHover,35%);
 $arrowColor:#eee;
 
 $contactText:#eee;
-$contactBackground:#222;
+$contactBackground:radial-gradient(circle,#aaa,#222);
 
 $footerBackground:rgba(239,239,239,.8);
 $footerBackgroundEnd:#eee;

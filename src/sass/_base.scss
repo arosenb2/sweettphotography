@@ -6,7 +6,7 @@
   position:relative;
   width:960px;
   height:100%;
-  @media screen and (max-width: 768px) {
+  @media #{$mobile} {
     width:100% !important;
   }
   margin:0 auto;
