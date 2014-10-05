@@ -595,6 +595,7 @@ header .nav-icon {
   display: block;
   width: 100%;
   overflow: hidden;
+  margin-top: 100vh;
 }
 
 footer {
