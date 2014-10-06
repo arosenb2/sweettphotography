@@ -47,6 +47,9 @@
 /* Portfolio Page */
 #portfolio{
   background-color:#dc143c;
+  @media #{$phone}{
+    height:565px;
+  }
   .portfolio-header-container{
     width:960px;
     margin:0 auto;
@@ -123,7 +126,7 @@
   background:$etsyBackground;
 
   @media #{$phone}{
-    height:120vh;
+    height:615px;
   }
   .container{
     top:0;
