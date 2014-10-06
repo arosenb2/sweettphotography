@@ -87,7 +87,7 @@
           @include transition;
           width:33.333% !important;
           @media #{$mobile} {
-            width:300px !important;
+            width:85% !important;
           }
         }
 

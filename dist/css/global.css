@@ -453,7 +453,7 @@ header li a {
 }
 @media screen and (max-width: 1024px) {
   #portfolio .portfolio-container ul li.active {
-    width: 300px !important;
+    width: 85% !important;
   }
 }
 #portfolio .portfolio-container ul li a {
