@@ -209,6 +209,10 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
         $(".portfolio-container li.active").removeClass("active");
         $(this).addClass("active");
     });
+
+    $(".portfolio-container").on("click","a",function(e){
+        e.preventDefault();
+    });
   });
 
   function loadFeatured(){
