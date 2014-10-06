@@ -177,12 +177,15 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
   setHeight();
 
   $(document).ready(function(){
-    setTimeout(function(){
-        $(".lazy").lazyload({
-            effect : "fadeIn",
-            threshold : 500
-        });
-    },1500);
+    if($(window).width() >= 1024){
+        setTimeout(function(){
+            $(".lazy").lazyload({
+                effect : "fadeIn",
+                threshold : 500
+            });
+        },1500);
+    }
+    
 
     var portfolio = $("#portfolio").offset().top;
     var etsy = $("#etsy").offset().top;
