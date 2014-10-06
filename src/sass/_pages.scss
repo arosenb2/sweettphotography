@@ -1,7 +1,7 @@
 /* Featured Page */
 #featured {
   z-index:0 !important;
-  background-color:#aaa;
+  background-color:#000;
   background-size:cover;
   .slideshow-arrow {
     position:fixed;
@@ -17,12 +17,15 @@
     }
   }
   img {
-    width:100%;
+    // width:100%;
 
-    @media #{$phone} {
-      width:auto !important;
+    width:auto !important;
       height:100vh;
-    }
+
+    // @media #{$phone} {
+    //   width:auto !important;
+    //   height:100vh;
+    // }
   }
 
   #logo {

@@ -356,7 +356,7 @@ header li a {
 /* Featured Page */
 #featured {
   z-index: 0 !important;
-  background-color: #aaa;
+  background-color: #000;
   background-size: cover;
 }
 #featured .slideshow-arrow {
@@ -372,13 +372,8 @@ header li a {
   right: 50px;
 }
 #featured img {
-  width: 100%;
-}
-@media screen and (max-width: 767px) {
-  #featured img {
-    width: auto !important;
-    height: 100vh;
-  }
+  width: auto !important;
+  height: 100vh;
 }
 #featured #logo {
   position: fixed;
