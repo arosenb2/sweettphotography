@@ -178,7 +178,8 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
 
   $(document).ready(function(){
     $(".lazy").lazyload({
-        effect : "fadeIn"
+        effect : "fadeIn",
+        threshold : 200
     });
 
     loadFeatured();
