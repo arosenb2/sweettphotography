@@ -184,15 +184,31 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
         });
     },1500);
 
+    var portfolio = $("#portfolio").offset().top;
+    var etsy = $("#etsy").offset().top;
+    var pageHeight = $(".page").height();
+
+    $(window).on("scroll",function(e){
+        var threshold = 150;
+        var current = $(window).scrollTop();
+
+        var min = portfolio-(pageHeight-threshold);
+        var max = etsy;
+
+        if(current >= min && current <= max){
+            $(".portfolio-container").show();
+        }
+        else {
+            $(".portfolio-container").hide();
+        }
+    });
+
     loadFeatured();
     loadPortfolio();
 
     setTimeout(function(){
         loadEtsy();
     },3000);
-
-    // $("html,body").scrollTop(1);
-    // $("html,body").scrollTop(0);
 
     $("nav").on("click","a",function(e){
         e.preventDefault();

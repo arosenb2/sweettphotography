@@ -56,6 +56,7 @@
     }
   }
   .portfolio-container{
+    display:none;
     position:relative;
     top:30px;
     @media #{$mobile} {
