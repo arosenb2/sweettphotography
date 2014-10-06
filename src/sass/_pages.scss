@@ -71,6 +71,7 @@
       white-space:nowrap;
       list-style:none;
       max-height:400px;
+      -webkit-overflow-scrolling:touch;
       li{
          @include transition;
         @include reset-size;

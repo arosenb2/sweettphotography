@@ -432,6 +432,7 @@ header li a {
   white-space: nowrap;
   list-style: none;
   max-height: 400px;
+  -webkit-overflow-scrolling: touch;
 }
 #portfolio .portfolio-container ul li {
   -webkit-transition: 0.3s all ease-in-out;
