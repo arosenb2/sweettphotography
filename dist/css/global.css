@@ -355,6 +355,7 @@ header li a {
 
 /* Featured Page */
 #featured {
+  z-index: 0 !important;
   background-color: #aaa;
   background-size: cover;
 }
@@ -364,7 +365,7 @@ header li a {
   height: 88px;
   width: 88px;
   left: 50px;
-  z-index: 500;
+  z-index: 400;
 }
 #featured .slideshow-arrow:last-child {
   left: auto !important;
