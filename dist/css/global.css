@@ -389,6 +389,8 @@ header li a {
 }
 @media screen and (max-width: 1200px) {
   #featured #logo {
+    -webkit-transition: 0.3s all ease-in-out;
+            transition: 0.3s all ease-in-out;
     top: calc(50% - 70px);
     left: 0;
     right: 0;
