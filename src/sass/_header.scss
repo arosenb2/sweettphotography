@@ -21,9 +21,11 @@ header {
 	list-style:none;
 	@include reset-size;
 	float:right;
+	width: 738px;
 	
 	@media #{$mobile} {
 		float:none;
+		width:100%;
 		li{
 			padding:0 !important;
 			width:20%;
@@ -32,8 +34,11 @@ header {
 
 	li{
 	  float:left;
-	  padding:5px 15px;
+	  padding:5px 0;
 	  list-style:none;
+	  width: 20%;
+	  text-align:center;
+
 	  a{
 		@include transition;
 

@@ -71,7 +71,7 @@
     </nav>
   </header>
   <div id="featured" class="page" data-cycle-prev="#featured .prev" data-cycle-next="#featured .next">
-    <a id="logo" href="#"></a>
+    <a id="logo" href="#">Sweet T Photography</a>
     <img class="lazy" data-original="dist/images/farm1.jpg" />
     <img class="lazy" data-original="dist/images/farm2.jpg" />
     <img class="lazy" data-original="dist/images/farm3.jpg" />
@@ -103,7 +103,29 @@
         </div>
       </div>
       <div class="portfolio-container">
-        <ul></ul>
+        <ul>
+            <li class="active">
+                <a href="#" data-text="Weddings">
+                    <img class="lazy" data-original="http://lorempixel.com/450/400/food" />
+                </a>
+            </li><li>
+                <a href="#" data-text="Senior Portraits">
+                    <img class="lazy" data-original="http://lorempixel.com/450/400/fashion" />
+                </a>
+            </li><li>
+                <a href="#" data-text="Babies">
+                    <img class="lazy" data-original="http://lorempixel.com/450/400/animals" />
+                </a>
+            </li><li>
+                <a href="#" data-text="Family Portraits">
+                    <img class="lazy" data-original="http://lorempixel.com/450/400/city" />
+                </a>
+            </li><li>
+                <a href="#" data-text="Landscapes">
+                    <img class="lazy" data-original="http://lorempixel.com/450/400/nature" />
+                </a>
+            </li>
+        </ul>
       </div>
       <div class="container">
 
@@ -161,7 +183,13 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
 
     loadFeatured();
     loadPortfolio();
-    loadEtsy();
+
+    setTimeout(function(){
+        loadEtsy();
+    },3000);
+
+    $("html,body").scrollTop(1);
+    $("html,body").scrollTop(0);
 
     $("nav").on("click","a",function(e){
         e.preventDefault();
@@ -174,6 +202,11 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
         $("html, body").animate({
             scrollTop: $(target).offset().top
         },500);
+    });
+
+    $(".portfolio-container li").mouseenter(function(){
+        $(".portfolio-container li.active").removeClass("active");
+        $(this).addClass("active");
     });
   });
 

@@ -380,18 +380,25 @@ header li a {
   }
 }
 #featured #logo {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
   position: fixed;
   top: 10px;
   left: 20px;
-  width: 475px;
   height: 70px;
-  background: #bbb;
-  opacity: .5;
-  z-index: 100;
+  z-index: 1000;
+  font-family: script;
+  font-size: 3em;
+  text-decoration: none;
+  text-shadow: 0 0 1px #333, 0 1px 1px #000;
+  text-align: center;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   #featured #logo {
-    display: none;
+    top: calc(50% - 70px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 }
 
@@ -402,7 +409,6 @@ header li a {
 #portfolio .portfolio-header-container {
   width: 960px;
   margin: 0 auto;
-  padding: 45px 0 0;
 }
 @media screen and (max-width: 1024px) {
   #portfolio .portfolio-header-container {
@@ -416,35 +422,70 @@ header li a {
   overflow-x: scroll;
   overflow-y: hidden;
 }
+@media screen and (max-width: 1024px) {
+  #portfolio .portfolio-container {
+    top: 0;
+  }
+}
 #portfolio .portfolio-container ul {
   margin: 0;
   padding: 0;
   white-space: nowrap;
   list-style: none;
-  max-height: 435px;
+  max-height: 400px;
 }
 #portfolio .portfolio-container ul li {
+  -webkit-transition: 0.3s all ease-in-out;
+          transition: 0.3s all ease-in-out;
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 250px;
-  height: 100%;
+  width: 16.667%;
+  overflow: hidden;
+  box-shadow: 0 0 15px 5px #333;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
 }
-#portfolio .portfolio-container ul li a {
+@media screen and (max-width: 1024px) {
+  #portfolio .portfolio-container ul li {
+    width: 300px;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+#portfolio .portfolio-container ul li.active {
   -webkit-transition: 0.3s all ease-in-out;
           transition: 0.3s all ease-in-out;
+  width: 33.333% !important;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+@media screen and (max-width: 1024px) {
+  #portfolio .portfolio-container ul li.active {
+    width: 300px !important;
+  }
+}
+#portfolio .portfolio-container ul li a {
+  width: 250px;
+  height: 100%;
+  text-decoration: none;
+}
+#portfolio .portfolio-container ul li a:after {
+  content: attr(data-text);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 2em;
+  position: relative;
+  top: -20px;
+  display: inline-block;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  margin: 0 0 0 -415px;
+  text-shadow: 0 0 1px #333, 0 1px 1px #000;
 }
 #portfolio .portfolio-container ul li a img {
   -webkit-transition: 0.3s all ease-in-out;
           transition: 0.3s all ease-in-out;
-  width: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  vertical-align: top;
-}
-#portfolio .portfolio-container ul li a img:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 
 /* Etsy Page */
@@ -501,10 +542,12 @@ header ul {
   margin: 0;
   padding: 0;
   float: right;
+  width: 738px;
 }
 @media screen and (max-width: 1024px) {
   header ul {
     float: none;
+    width: 100%;
   }
   header ul li {
     padding: 0 !important;
@@ -513,8 +556,10 @@ header ul {
 }
 header ul li {
   float: left;
-  padding: 5px 15px;
+  padding: 5px 0;
   list-style: none;
+  width: 20%;
+  text-align: center;
 }
 header ul li a {
   -webkit-transition: 0.3s all ease-in-out;
