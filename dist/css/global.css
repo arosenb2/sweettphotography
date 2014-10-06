@@ -355,7 +355,7 @@ header li a {
 
 /* Featured Page */
 #featured {
-  background-color: #eee;
+  background-color: #aaa;
   background-size: cover;
 }
 #featured .slideshow-arrow {
@@ -385,7 +385,7 @@ header li a {
   left: 20px;
   height: 70px;
   z-index: 1000;
-  font-family: script;
+  font-family: "Times";
   font-size: 3em;
   text-decoration: none;
   text-shadow: 0 0 1px #333, 0 1px 1px #000;
@@ -607,6 +607,10 @@ header .nav-icon {
   header .nav-icon {
     display: block !important;
   }
+}
+
+body {
+  background-color: #aaa;
 }
 
 .page {
