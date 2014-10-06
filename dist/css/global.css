@@ -440,22 +440,16 @@ header li a {
   width: 16.667%;
   overflow: hidden;
   box-shadow: 0 0 15px 5px #333;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
 }
 @media screen and (max-width: 1024px) {
   #portfolio .portfolio-container ul li {
     width: 300px;
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
   }
 }
 #portfolio .portfolio-container ul li.active {
   -webkit-transition: 0.3s all ease-in-out;
           transition: 0.3s all ease-in-out;
   width: 33.333% !important;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 @media screen and (max-width: 1024px) {
   #portfolio .portfolio-container ul li.active {
