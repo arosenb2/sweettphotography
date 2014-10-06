@@ -215,7 +215,9 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
     });
 
     $(window).on('hashchange',function(e){
-        e.preventDefault();
+        window.location.hash = ''; // for older browsers, leaves a # behind
+        history.pushState('', document.title, window.location.pathname); // nice and clean
+        e.preventDefault(); // no page reload
     });
   });
 
