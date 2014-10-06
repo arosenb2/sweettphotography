@@ -185,6 +185,12 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
             });
         },1500);
     }
+    else {
+        $(".lazy").each(function(i,val){
+            var item = $(val);
+            $(item).attr("src",item.attr("data-original"));
+        });
+    }
     
 
     var portfolio = $("#portfolio").offset().top;
