@@ -177,10 +177,12 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
   setHeight();
 
   $(document).ready(function(){
-    $(".lazy").lazyload({
-        effect : "fadeIn",
-        threshold : 200
-    });
+    setTimeout(function(){
+        $(".lazy").lazyload({
+            effect : "fadeIn",
+            threshold : 200
+        });
+    },1500);
 
     loadFeatured();
     loadPortfolio();
