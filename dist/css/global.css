@@ -380,8 +380,6 @@ header li a {
   }
 }
 #featured #logo {
-  -webkit-transition: 0.3s all ease-in-out;
-          transition: 0.3s all ease-in-out;
   position: fixed;
   top: 10px;
   left: 20px;
