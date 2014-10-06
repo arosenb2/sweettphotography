@@ -419,6 +419,7 @@ header li a {
   top: 30px;
   overflow-x: scroll;
   overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 @media screen and (max-width: 1024px) {
   #portfolio .portfolio-container {
