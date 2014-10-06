@@ -375,8 +375,8 @@ header li a {
 }
 @media screen and (max-width: 767px) {
   #featured img {
-    height: 100%;
-    width: auto;
+    width: auto !important;
+    height: 100vh;
   }
 }
 #featured #logo {

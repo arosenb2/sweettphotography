@@ -16,11 +16,12 @@
     }
   }
   img {
-    @media #{$phone} {
-      height:100%;
-      width:auto;
-    }
     width:100%;
+
+    @media #{$phone} {
+      width:auto !important;
+      height:100vh;
+    }
   }
 
   #logo {
