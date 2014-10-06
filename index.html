@@ -213,6 +213,10 @@ function loadJS(a){"use strict";var b=window.document.getElementsByTagName("scri
     $(".portfolio-container").on("click","a",function(e){
         e.preventDefault();
     });
+
+    $(window).on('hashchange',function(e){
+        e.preventDefault();
+    });
   });
 
   function loadFeatured(){
